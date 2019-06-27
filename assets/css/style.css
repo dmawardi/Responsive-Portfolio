@@ -258,11 +258,9 @@ nav ul li:hover a {
         /* font-size: 20px; */
     }
 
-    /* .profilePic::after {
-        clear: both;
-        content: "";
-        display: block;
-    } */
+    .tableContainer {
+        overflow-x: auto;
+    }
 
 }
 
@@ -283,6 +281,10 @@ nav ul li:hover a {
         font-size: 18px;
     }
 
+    table tbody tr td {
+        width: 45%;
+    }
+
     /* .rAboutMe {
         margin-left: 20px;
         width: 60%;
@@ -293,6 +295,11 @@ nav ul li:hover a {
         width: 60%;
         font-size: 20px;
         margin-left: 10px;
+    }
+
+    table td {
+        width: 50%;
+        display: inline-block;
     }
 
 }
@@ -356,6 +363,11 @@ nav ul li:hover a {
     
     nav {
         width: 100%;
+    }
+
+    table td {
+        width: 100%;
+        display: block;
     }
 
 }
