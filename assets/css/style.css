@@ -62,7 +62,11 @@ table {
 }
 
 table tr td {
-    text-align: center;
+    position: relative;
+}
+
+table tr td a img {
+    margin: 0 auto;
 }
 
 
@@ -77,11 +81,11 @@ section {
 /* Places table text on top of image as label */
 table td p {
     position: relative;
+    z-index: 999;
     background-color: rgb(38, 68, 110);
     margin: 0 auto;
     color: white;
     text-align: center;
-    left: 46px;
     bottom: 50px;
 }
 
@@ -132,6 +136,12 @@ footer::after {
     clear: both;
 }
 
+td img {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 /* Article CSS */
 article {
     margin: 10px;
@@ -161,6 +171,10 @@ section h1 {
 
 .smlProfile {
     display: none;
+}
+
+.profilePic img {
+    margin: 0 auto;
 }
 
 
@@ -227,9 +241,28 @@ nav ul li:hover a {
         /* background: lightblue; */
     }
 
+    /* Footer CSS */
+    .footerBar, .footerStrip, footer, section {
+        width: 100%;
+    }
+
+    .profilePic {
+        width: 38%;
+    }
+
+    aside {
+        width: 60%;
+    }
+
     body {
         /* font-size: 20px; */
     }
+
+    /* .profilePic::after {
+        clear: both;
+        content: "";
+        display: block;
+    } */
 
 }
 
@@ -242,18 +275,24 @@ nav ul li:hover a {
         display: block;
     } */
 
-    /* .profilePic {
-        width: 100%;
-    } */
+    .profilePic {
+        width: 38%;
+    }
 
     body {
         font-size: 18px;
     }
 
-    .rAboutMe {
+    /* .rAboutMe {
         margin-left: 20px;
         width: 60%;
 
+    } */
+
+    aside {
+        width: 60%;
+        font-size: 20px;
+        margin-left: 10px;
     }
 
 }
@@ -266,41 +305,57 @@ nav ul li:hover a {
 
     .profilePic {
         width: 100%;
-        height: auto;
 
     }
 
+    nav {
+        height: initial;
+    }
+
+
+    /* Footer CSS */
+    .footerBar, .footerStrip, footer {
+        width: 100%;
+    }
+
+
+    /* Profile img responsiveness CSS */
     .smlProfile {
         display: block;
-        text-align: center;
-
+        margin: 0 auto;
     }
 
     .lrgProfile {
         display: none;
     }
 
-    /* img.resize {
-        width: 200px;
-        height: 40px;
-
-    } */
-
+    /* Section / Article CSS */
     article h1 {
         font-size: 50px;
     }
 
     aside {
         width: 100%;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     section {
-        width: 880px;
+        width: 100%;
         text-align: center;
     }
-    table td p {
-        float: left;
+
+    .nameHeader {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    nav ul li {
+        width: 26%;
+        text-align: center;
+    }
+    
+    nav {
+        width: 100%;
     }
 
 }
