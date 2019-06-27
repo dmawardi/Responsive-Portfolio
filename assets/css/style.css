@@ -78,7 +78,7 @@ section {
 /* Places table text on top of image as label */
 table td p {
     position: relative;
-    z-index: 999;
+    z-index: 800;
     background-color: rgb(38, 68, 110);
     margin: 0 auto;
     color: white;
@@ -311,6 +311,7 @@ nav ul li:hover a {
 
     section {
         width: 100%;
+        margin-top: 200px;
     }
 
     section h1 {
@@ -332,6 +333,10 @@ nav ul li:hover a {
     
     nav {
         width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+
     }
 
     /* Portfolio CSS */
