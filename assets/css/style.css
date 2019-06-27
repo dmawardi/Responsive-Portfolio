@@ -63,9 +63,11 @@ table {
 
 table tr td {
     position: relative;
+    width: 33%;
+    display: inline-block;
 }
 
-table tr td a img {
+table td a img {
     margin: 0 auto;
 }
 
@@ -260,6 +262,7 @@ nav ul li:hover a {
 
     .tableContainer {
         overflow-x: auto;
+        margin: 0 auto;
     }
 
 }
@@ -283,6 +286,7 @@ nav ul li:hover a {
 
     table tbody tr td {
         width: 45%;
+        display: inline-block;
     }
 
     /* .rAboutMe {
@@ -297,10 +301,10 @@ nav ul li:hover a {
         margin-left: 10px;
     }
 
-    table td {
-        width: 50%;
+    /* table td {
+        width: 45%;
         display: inline-block;
-    }
+    } */
 
 }
 
@@ -365,9 +369,14 @@ nav ul li:hover a {
         width: 100%;
     }
 
-    table td {
+    table tbody tr td {
         width: 100%;
         display: block;
     }
+
+    table td p {
+        width: 50%;
+    }
+
 
 }
