@@ -10,16 +10,11 @@ html {
     margin: 0;
 }
 
-body h1,
-h2,
-h3 {
-    font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
-}
-
 body p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+/* Nav CSS */
 nav {
     width: 960px;
     height: 70px;
@@ -91,6 +86,7 @@ table td p {
     bottom: 50px;
 }
 
+/* Footer CSS */
 .footerBar {
     width: 960px;
     background-color: #666666;
@@ -132,12 +128,7 @@ footer::after {
     clear: both;
 }
 
-.rAboutMe::after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
+/* Assists with image float and placing label */
 td img {
     content: "";
     display: block;
@@ -175,6 +166,7 @@ section h1 {
     display: none;
 }
 
+/* Centers image */
 .profilePic img {
     margin: 0 auto;
 }
@@ -192,7 +184,6 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
-
 
 form {
     border-radius: 5px;
@@ -230,24 +221,14 @@ nav ul li:hover a {
 
 }
 
-/* Responsive Design : Web elements that are hidden at max width */
-
-.rBreak {
-    /* display: inline; */
-}
-
 /* Media Queries */
-
 @media only screen and (max-width: 980px) {
-    html {
-        /* background: lightblue; */
-    }
-
     /* Footer CSS */
-    .footerBar, .footerStrip, footer, section {
+    .footerBar, .footerStrip, footer, section, nav {
         width: 100%;
     }
 
+    /* Article CSS */
     .profilePic {
         width: 38%;
     }
@@ -256,10 +237,7 @@ nav ul li:hover a {
         width: 60%;
     }
 
-    body {
-        /* font-size: 20px; */
-    }
-
+    /* Portfolio CSS */
     .tableContainer {
         overflow-x: auto;
         margin: 0 auto;
@@ -268,18 +246,6 @@ nav ul li:hover a {
 }
 
 @media only screen and (max-width: 768px) {
-    html {
-        /* background: lightgreen; */
-    }
-
-    /* .rBreak {
-        display: block;
-    } */
-
-    .profilePic {
-        width: 38%;
-    }
-
     body {
         font-size: 18px;
     }
@@ -289,29 +255,22 @@ nav ul li:hover a {
         display: inline-block;
     }
 
-    /* .rAboutMe {
-        margin-left: 20px;
-        width: 60%;
-
-    } */
-
+    /* Article CSS */
     aside {
         width: 60%;
         font-size: 20px;
         margin-left: 10px;
     }
 
-    /* table td {
-        width: 45%;
-        display: inline-block;
-    } */
+    .profilePic {
+        width: 38%;
+    }
 
 }
 
 @media only screen and (max-width: 640px) {
-
     body {
-        width: 600px;
+        width: 100%;
     }
 
     .profilePic {
@@ -346,29 +305,36 @@ nav ul li:hover a {
     }
 
     aside {
-        width: 100%;
+        width: 95%;
         font-size: 30px;
     }
 
     section {
         width: 100%;
+    }
+
+    section h1 {
         text-align: center;
     }
 
+
+    /* Nav CSS */
     .nameHeader {
         width: 100%;
         margin-left: 0;
     }
 
     nav ul li {
-        width: 26%;
+        width: 32.5%;
         text-align: center;
+        padding: 20px 0;
     }
     
     nav {
         width: 100%;
     }
 
+    /* Portfolio CSS */
     table tbody tr td {
         width: 100%;
         display: block;
